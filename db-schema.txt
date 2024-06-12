@@ -1,0 +1,30 @@
+Empleados:
+    id (INT, PRIMARY KEY, AUTO_INCREMENT)
+    nombre (VARCHAR)
+    apellido (VARCHAR)
+    fecha_contratacion (DATE)
+    salario (DECIMAL)
+    departamento_id (INT, FOREIGN KEY)
+    pais (VARCHAR)
+    cargo (VARCHAR)
+
+Departamentos:
+    id (INT, PRIMARY KEY, AUTO_INCREMENT)
+    nombre (VARCHAR)
+    ubicacion (VARCHAR)
+
+Proyectos:
+    id (INT, PRIMARY KEY, AUTO_INCREMENT)
+    nombre (VARCHAR)
+    fecha_inicio (DATE)
+    presupuesto (DECIMAL)
+
+Asignaciones:
+    id (INT, PRIMARY KEY, AUTO_INCREMENT)
+    empleado_id (INT, FOREIGN KEY)
+    proyecto_id (INT, FOREIGN KEY)
+    fecha_asignacion (DATE)
+    horas_trabajadas (FLOAT)
+
+
+
