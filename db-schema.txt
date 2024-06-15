@@ -1,6 +1,7 @@
 Empleados:
     id (INT, PRIMARY KEY, AUTO_INCREMENT)
     nombre (VARCHAR)
+    dni INT
     apellido (VARCHAR)
     fecha_contratacion (DATE)
     salario (DECIMAL)
