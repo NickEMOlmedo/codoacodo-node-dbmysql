@@ -9,6 +9,7 @@ CREATE TABLE `empleados` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) DEFAULT NULL,
   `apellido` varchar(100) DEFAULT NULL,
+  `dni` INT UNIQUE DEFAULT NULL,
   `fecha_contratacion` date DEFAULT NULL,
   `salario` decimal(10,0) DEFAULT NULL,
   `departamento_id` int DEFAULT NULL,
